@@ -1,11 +1,11 @@
-name: bob
-version: 1.4.0.10
+name: nth-prime
+version: 2.1.0.6
 
 dependencies:
   - base
 
 library:
-  exposed-modules: Bob
+  exposed-modules: Prime
   source-dirs: src
   ghc-options: -Wall
   # dependencies:
@@ -17,5 +17,5 @@ tests:
     main: Tests.hs
     source-dirs: test
     dependencies:
-      - bob
+      - nth-prime
       - hspec
