@@ -1,6 +1,6 @@
 class Acronym
 
   def self.abbreviate(sentence)
-    sentence.scan(/\w+/).map{|word| word[0].capitalize}.join
+    sentence.scan(/\b[a-zA-Z]/).map{|x| x.capitalize}.join
   end
 end
