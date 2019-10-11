@@ -1,0 +1,38 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 5a8fb70664f1862b99bd0bfd083178b6e2d06aff4f51ed2d518d3055f5a034b5
+
+name:           etl
+version:        1.0.0.5
+build-type:     Simple
+
+library
+  exposed-modules:
+      ETL
+  other-modules:
+      Paths_etl
+  hs-source-dirs:
+      src
+  ghc-options: -Wall
+  build-depends:
+      base
+    , containers
+  default-language: Haskell2010
+
+test-suite test
+  type: exitcode-stdio-1.0
+  main-is: Tests.hs
+  other-modules:
+      Paths_etl
+  hs-source-dirs:
+      test
+  build-depends:
+      base
+    , containers
+    , etl
+    , hspec
+  default-language: Haskell2010
